@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  amq-vuln:
+    image: apache/activemq-classic:5.18.2   # vulnerable
+    container_name: amq-vuln
+    ports:
+      - "127.0.0.1:61616:61616"  # OpenWire
+      - "127.0.0.1:8161:8161"    # Web console
+    restart: unless-stopped
+
+  amq-fixed:
+    image: apache/activemq-classic:5.18.3   # fixed
+    container_name: amq-fixed
+    ports:
+      - "127.0.0.1:61617:61616"  # OpenWire (offset)
+      - "127.0.0.1:8162:8161"    # Web console (offset)
+    restart: unless-stopped
