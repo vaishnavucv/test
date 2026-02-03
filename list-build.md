@@ -57,3 +57,34 @@ Here is a simple guide to recreating this application, broken down into 10 manag
    - **Export**: Add a button to download the filtered list as a CSV.
    - **Copy Details**: Add a button to copy the item's full metadata to the clipboard.
    - **Deployment**: Run `npm run build` to create a production-ready folder (`dist/`) that can be hosted anywhere.
+
+What is the project ?
+- User give input to AI system that can automate browser action like click + type 
+- Based on the user input as a “prompt” the ai system need to understand the user goal + end result + use-case + what need to be performed + browser actions
+- Ai system need to use “playwright” as the web browser automation engine for the task 
+- Ai system need to generate playwright tsx file that can perform action in browser 
+- The Ai system can be OpenAi API KEY or Ollama API ends 
+- User can use any of the above AI API provider
+- If any error in the playwright action, if its not able to meet the user defined needful action that need to be preformed in the browser then fix the playwright tsx file then retry until the actual goal completed
+- Make a score system that can help to work efficiently and fix errors by its own 
+- The default browser will be chrome 
+- This should be compatible with Mac, ubuntu, windows11 
+- No unwanted markdown file need to generated or create at the file for build or error fix 
+- Make a copy of playwright in the code repo
+- For dev only use the MCP for playwright in the map tools session 
+- No GUI for this version, but will be add one later 
+
+
+Below mentioned file need to be create first in order to start building the profile.
+- Docs
+    - Build-Plan.md
+        - Objective 
+        - Goal
+        - Tech Stack
+        - Logical workflow 
+        - Out come
+    - Workflow.md
+    - Phase1-build.md
+    - Phase2-build.md
+    - Phase3-build.md
+Each each  mentioned md for that point I I’ll do a review on the build plan and setup that we will be in the next stage.  
